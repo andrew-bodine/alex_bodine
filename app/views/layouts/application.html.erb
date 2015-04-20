@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Alex Bodine</title>
+    <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container"></div>
+    </nav>
+
+    <div class="container">
+      <%= yield %>
+    </div>
+  </body>
+</html>
