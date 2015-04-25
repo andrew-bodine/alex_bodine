@@ -30,6 +30,7 @@ AlexBodine::Application.configure do
   config.assets.compile = false
 
   # Generate digests for assets URLs.
+  config.assets.enabled = true
   config.assets.digest = true
 
   # Version of your assets, change this if you want to expire all your assets.
@@ -56,6 +57,7 @@ AlexBodine::Application.configure do
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
   # config.action_controller.asset_host = "http://assets.example.com"
+  config.action_controller.asset_host = "#{ENV['FOG_DIRECTORY']}.s3.amazonaws.com"
 
   # Precompile additional assets.
   # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.

@@ -49,6 +49,12 @@ end
 # Use unicorn as the app server
 gem 'unicorn'
 
+# Sync assets to Amazon S3
+group :assets do
+  gem "fog", "~>1.20", require: "fog/aws/storage"
+  gem 'asset_sync'
+end
+
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development
 
