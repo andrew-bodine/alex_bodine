@@ -257,7 +257,7 @@ PLATFORMS
 
 DEPENDENCIES
   asset_sync
-  bootstrap-sass
+  bootstrap-sass (~> 3.3.4)
   coffee-rails (~> 4.0.0)
   factory_girl
   factory_girl_rails
