@@ -1,0 +1,12 @@
+---
+applications:
+- host: alexbodine
+  name: alexbodine
+  path: .
+  domain: mybluemix.net
+  instances: 1
+  memory: 512M
+  command: rake db:migrate; rake assets:precompile; bin/rails server -p $PORT -e $RAILS_ENV
+  services:
+  - mysql-0
+
