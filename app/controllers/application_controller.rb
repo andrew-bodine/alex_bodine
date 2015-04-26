@@ -17,7 +17,8 @@ class ApplicationController < ActionController::Base
       config.oauth_token_secret = ENV['TWITTER_ACCESS_TOKEN_SECRET']
     end
 
-    @tweets = client.home_timeline(count: 5)
+    # TODO: change this to user_timeline
+    @tweets = client.home_timeline(count: 10)
   rescue
     logger.warn 'Failed to retrieve tweets from twitter. Are you environment vars set?'
   end

@@ -76,3 +76,36 @@ body {
     }
   }
 }
+
+.news {
+  background: white;
+  padding: 0;
+
+  .header {
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 5px 10px #888888;
+
+    h3 {
+      margin: 0;
+    }
+  }
+
+  .content {
+    height: 400px;
+    overflow: scroll;
+    padding: 10px;
+
+    .entry {
+      padding-top: 10px;
+      font-family: 'Lora', serif;
+    }
+
+    .divider {
+      height: 0;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 5px 10px black;
+    }
+  }
+}

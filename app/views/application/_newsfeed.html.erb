@@ -1,4 +1,21 @@
-<h3>Newsfeed</h3>
-<% @tweets.each do |tweet| %>
-  <p><%= tweet.text %></p>
-<% end %>
+<div class="col-md-3 news">
+  <div class="header">
+    <h3>News</h3>    
+  </div>
+
+  <div class="content">
+    <% @tweets.each do |tweet| %>
+    <div class="row">
+      <div class="entry"
+        <p><%= tweet.text %></p>
+        <p><%= tweet.in_reply_to_screen_name %></p>
+        <p><%= tweet.uri %></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 divider"></div>
+    </div>
+    <% end %>
+  </div>
+
+</div>
