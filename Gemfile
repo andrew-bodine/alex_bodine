@@ -7,7 +7,10 @@ gem 'rails', '4.0.2'
 
 # sqlite
 gem 'sqlite3'
-gem 'mysql2'
+
+group :production do
+  gem 'mysql2'
+end
 
 # Use SCSS for stylesheets
 gem 'bootstrap-sass' , '~> 3.3.4'

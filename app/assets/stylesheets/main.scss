@@ -1,3 +1,6 @@
-@import "base/mixin.scss";
-@import "base/global.scss";
+/* bootstrap */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
 @import "styles/index.scss";
+
