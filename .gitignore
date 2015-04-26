@@ -60,3 +60,6 @@ bower.json
 
 # Environments
 config/environments/production
+
+# bower
+bower_components
