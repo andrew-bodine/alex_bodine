@@ -1,20 +1,62 @@
+$main-bg-color: #262626;
+$secondary-bg-color: #d9d9d9;
+$header-text-color: #0BC8CB;
+$secondary-text-color: #64758c;
+$primary-border-color: #f2ede9;
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   .container{
-    background-image: image-url('10153884_10152534983037858_2895241018831172779_n.jpg');
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-color: $main-bg-color;
+  }
+}
+
+.nav {
+  li {
+    a{
+      color: $secondary-text-color;
+      font-size: 30px;
+      &:hover{
+        background-color: $primary-border-color;
+        color: $header-text-color;
+      }
+    }
+  }
+
+}
+
+.row {
+  margin: 0;
+  h3 {
+    font-family: 'Merienda One', Helvetica, sans-serif;
+    color: $header-text-color;
   }
 }
 .row-index {
-  font-family: 'Trebuchet Ms';
   h3 {
-    color: red;
-    text-shadow: 2px #fff;
+    font: 400 100px/1.2 'Merienda One', Helvetica, sans-serif;
+    color: $header-text-color;
+    text-shadow: 3px 3px 3px $primary-border-color;
+    /*color: $header-text-color;*/
+    /*text-shadow: 1px 1px $primary-border-color;*/
   }
 }
 .row-bio {
   opacity: .6;
-  background-color: #fff;
+  background-color: $secondary-bg-color;
 }
 .row-gallery {
+  .thumbnail {
+    background-color: $secondary-bg-color;
+  }
   img {
     height: 350px;
     width: 350px;
