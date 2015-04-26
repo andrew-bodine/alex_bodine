@@ -1,16 +1,22 @@
+body {
+  .container{
+    background-image: image-url('10153884_10152534983037858_2895241018831172779_n.jpg');
+  }
+}
 .row-index {
-  img {
-    height: 500px;
-    z-index: -10;
-    display: block;
-    border: 5px solid black;
-  }
+  font-family: 'Trebuchet Ms';
   h3 {
-    
+    color: red;
+    text-shadow: 2px #fff;
   }
+}
+.row-bio {
+  opacity: .6;
+  background-color: #fff;
 }
 .row-gallery {
   img {
- 
+    height: 350px;
+    width: 350px;
   }
 }
