@@ -52,6 +52,10 @@ end
 # Use unicorn as the app server
 gem 'unicorn'
 
+group :social do
+  gem 'twitter'
+end
+
 # Sync assets to Amazon S3
 group :assets do
   gem "fog", "~>1.20", require: "fog/aws/storage"
