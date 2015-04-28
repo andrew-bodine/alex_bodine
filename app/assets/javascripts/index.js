@@ -1,14 +1,21 @@
 window.addEventListener('load',
   function() {
-    setSectionHeight();
+    // setSectionHeight();
+    resizeIndexImage();
   }
 );
 
 window.addEventListener('resize',
   function() {
-    setSectionHeight();
+    // setSectionHeight();
+    resizeIndexImage();
   }
 );
+
+function resizeIndexImage() {
+  var indexImg = $('#indexImg');
+  indexImg.height($(window).height());
+}
 
 // function scrollSections(event) {
 //   event.preventDefault();

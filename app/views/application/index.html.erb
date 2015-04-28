@@ -1,16 +1,35 @@
-<div class="row row-index">
-	<%= image_tag("AlexBodine.jpg") %>
-	<h3 class="col-md-offset-8">Alex Bodine</h3>
+<div id="headerUnit" class="col-md-4 col-md-push-8 col-xs-12">
+	<div class="row row-index">
+		<h3 class="">Alex Bodine</h3>
+	</div>
+	<div id="socialMediaLinks" class="row">
+		<ul>
+			<li>
+				<a href="https://www.facebook.com/alex.bodine.3?fref=ts" target="_blank"><img src="http://www.piperlegacypress.com/wp-content/uploads/2014/07/Facebook-Logo-Circle.png"></a>
+			</li>
+			<li>
+				<a href="#" target="_blank"><img src="http://icons.iconarchive.com/icons/limav/flat-gradient-social/512/Twitter-icon.png"></a>
+			</li>
+			<li>
+				<a href="#" target="_blank"><img src="http://brandeblog.files.wordpress.com/2011/08/linkedin-icon.png"></a>
+			</li>
+		</ul>
+	</div>
+	<div class="row">
+		<%= render 'navbar' %>
+	</div>
+	<div class="row">
+		<%= render 'newsfeed' %>
+	</div>
 </div>
-<div class="row">
-	<%= render 'navbar' %>
-</div>
-<div class="row">
-	<%= render 'newsfeed' %>
-</div>
-<div class="row row-bio">
-	<%= render 'bio' %>
-</div>
-<div class="row row-gallery">
-	<%= render 'gallery' %>
+
+<%= image_tag("AlexBodine.jpg", id: "indexImg") %>
+
+<div id="contentUnit" class="col-md-8">
+	<div class="row row-bio">
+		<%= render 'bio' %>
+	</div>
+	<div class="row row-gallery">
+		<%= render 'gallery' %>
+	</div>
 </div>
