@@ -1,5 +1,5 @@
 <ul class="nav col-sm-12 col-xs-12 col-md-12">
-	<li><a href="#bioPage">Bio</a></li>
+	<li><a href="#bio">Bio</a></li>
 	<li>
 		<!-- load resume modal -->
 		<a href="#myModal" data-toggle="modal" data-target="#myModal">Resume</a>
@@ -12,14 +12,15 @@
   <div class="modal-dialog modal-large">
     <div class="modal-content">
       <div class="modal-body">
+
         <!-- load static pdf here -->
-        <object data="<%= asset_path('AlexBodineResume.pdf') %>" type="application/pdf" width="100%" height="100%">
+        <!-- <object data="<%= asset_path('AlexBodineResume.pdf') %>" type="application/pdf" width="100%" height="100%">
           <p>
             It appears you don't have a PDF plugin for this browser.
             No biggie... you can <a href="<%= asset_path('AlexBodineResume.pdf') %>">click here to
             download the PDF file.</a>
           </p>
-        </object>
+        </object> -->
 
       </div>
     </div>

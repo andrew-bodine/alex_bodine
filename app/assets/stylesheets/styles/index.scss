@@ -1,8 +1,10 @@
-$main-bg-color: #262626;
+/*$main-bg-color: #262626;*/
+$main-bg-color: #BDC3C7;
 $secondary-bg-color: #d9d9d9;
 $header-text-color: #0BC8CB;
 $secondary-text-color: #64758c;
 $primary-border-color: #f2ede9;
+$menu-item-hover: #262626;
 
 html, body {
   margin: 0;
@@ -26,12 +28,15 @@ body {
 }
 
 #contentUnit{
-
+  padding-left: 0;
+  padding-right: 0;
 }
 
 #socialMediaLinks {
-  background-color: $primary-border-color;
+  /*background-color: $primary-border-color;*/
   ul {
+    padding: 0;
+
     li{
       display: inline;
       list-style-type: none;
@@ -54,8 +59,10 @@ body {
       color: $secondary-text-color;
       font-size: 30px;
       &:hover{
-        background-color: $primary-border-color;
-        color: $header-text-color;
+        /*background-color: $primary-border-color;*/
+        background-color: #64758c;
+        /*color: $header-text-color;*/
+        color: $menu-item-hover;
       }
     }
   }
@@ -70,16 +77,29 @@ body {
 }
 .row-index {
   h3 {
-    font: 400 100px/1.2 'Merienda One', Helvetica, sans-serif;
+    font-size: 5em;
+    /*font: 400 100px/1.2 'Merienda One', Helvetica, sans-serif;*/
+    font-family: 'Molle', cursive;
     color: $header-text-color;
-    text-shadow: 3px 3px 3px $primary-border-color;
+    /*text-shadow: 3px 3px 3px $primary-border-color;*/
     /*color: $header-text-color;*/
     /*text-shadow: 1px 1px $primary-border-color;*/
   }
 }
 
 .row-bio {
-  background-color: $secondary-bg-color;
+  /*background-color: $secondary-bg-color;*/
+
+  /* TODO: make this $secondary-bg-color */
+  background-color: #ebebeb;
+  padding: 30px;
+
+  h3 {
+    /*padding-left: 30px;*/
+    color: $secondary-text-color;
+    margin: 0;
+    margin-bottom: 20px;
+  }
 }
 .row-gallery {
   .thumbnail {
@@ -88,6 +108,7 @@ body {
   img {
     height: 350px;
     width: 350px;
+    margin-bottom: 30px;
   }
 }
 
@@ -136,4 +157,13 @@ body {
       box-shadow: 0 5px 10px black;
     }
   }
+}
+
+#galleryPage {
+  color: $secondary-bg-color;
+  text-align: center;
+}
+
+.albums {
+  padding: 30px;
 }

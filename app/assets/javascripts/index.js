@@ -2,6 +2,21 @@ window.addEventListener('load',
   function() {
     // setSectionHeight();
     resizeIndexImage();
+
+    $('.album').each(
+      function(index, hightlight) {
+        $(hightlight).hover(
+          function() {
+
+            $(hightlight).find('album-label').removeClass('hidden');
+
+          },
+          function() {
+            $(hightlight).find('album-label').addClass('hidden');
+          }
+        );
+      }
+    );
   }
 );
 
@@ -71,4 +86,31 @@ function setSectionHeight() {
       $(element).height($(window).height())
     }
   );
+}
+
+function viewAlbum(albumCover) {
+  var
+    pswpElement = document.querySelectorAll('.pswp')[0],
+    items = [],
+    entries = $(albumCover).find('.album-entries').find('img')
+  ;
+
+  entries.each(
+    function(index, entry) {
+      items.push(
+        {
+          src: entry.src,
+          h: 800,
+          w: 800
+        }
+      );
+    }
+  );
+
+  var options = {
+      index: 0 // start at first slide
+  };
+
+  var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
+  gallery.init();
 }

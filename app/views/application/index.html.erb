@@ -1,7 +1,4 @@
-<div id="headerUnit" class="col-md-4 col-md-push-8 col-xs-12">
-	<div class="row row-index">
-		<h3 class="">Alex Bodine</h3>
-	</div>
+<div id="headerUnit" class="col-md-3 col-md-push-9 col-xs-12">
 	<div id="socialMediaLinks" class="row">
 		<ul>
 			<li>
@@ -15,6 +12,9 @@
 			</li>
 		</ul>
 	</div>
+	<div class="row row-index">
+		<h3 class="">Alex Bodine</h3>
+	</div>
 	<div class="row">
 		<%= render 'navbar' %>
 	</div>
@@ -23,10 +23,12 @@
 	</div>
 </div>
 
-<%= image_tag("AlexBodine.jpg", id: "indexImg") %>
+<div style="width:100%; height:100%;">
+	<%= image_tag("IMG_2135.jpg", width: "100%") %>
+</div>
 
-<div id="contentUnit" class="col-md-8">
-	<div class="row row-bio">
+<div id="contentUnit" class="col-md-12">
+	<div class="row row-bio" id="bio">
 		<%= render 'bio' %>
 	</div>
 	<div class="row row-gallery">

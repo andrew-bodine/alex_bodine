@@ -1,29 +1,57 @@
 <h3 id="galleryPage">Gallery</h3>
-<div class="col-md-12">
-	<div class="thumbnail col-xs-12 col-sm-4 col-md-4">
+<div class="col-md-8 albums">
+	<div class="col-xs-12 col-sm-4 col-md-6 album" onclick="viewAlbum(this)">
 		<%= image_tag("10458393_10152534982672858_3108479130225556335_n.jpg") %>
-	<!-- load text on small device instead of load image -->
-	<div class="caption">
-			<h5>Learned Ladies</h5>
+  	<!-- load text on small device instead of load image -->
+		<h4 class="album-label hidden">Learned Ladies</h4>
+    <div class="album-entries hidden">
+      <%= image_tag("10153884_10152534983037858_2895241018831172779_n.jpg") %>
+      <%= image_tag("10424314_10152534982597858_2057245940834220889_n.jpg") %>
+      <%= image_tag("10458393_10152534982672858_3108479130225556335_n.jpg") %>
+      <%= image_tag("10522741_10152534982182858_3411016577353827071_n.jpg") %>
+      <%= image_tag("10606613_10152534982552858_501209276021017358_n.jpg") %>
 		</div>
-		<button>View Gallery</button>
 	</div>
-	<div class="thumbnail col-xs-12 col-sm-4 col-md-4">
+	<div class="col-xs-12 col-sm-4 col-md-6 album" onclick="viewAlbum(this)">
 		<%= image_tag("DSC_0710.jpg") %>
-		<div class="caption">
-			<h5>Angels In America</h5>
-		</div>
-		<button>View Gallery</button>
+		<h4 class="album-label hidden">Angels In America</h4>
+    <div class="album-entries hidden">
+      <%= image_tag("DSC_0502.JPG") %>
+      <%= image_tag("DSC_0611.jpg") %>
+      <%= image_tag("DSC_0710.jpg") %>
+      <%= image_tag("IMG_2135.jpg") %>
+      <%= image_tag("IMG_2410.JPG") %>
+      <%= image_tag("IMG_2419.JPG") %>
+      <%= image_tag("IMG_2488.JPG") %>
+      <%= image_tag("IMG_2507.JPG") %>
+      <%= image_tag("IMG_2516.JPG") %>
+      <%= image_tag("IMG_2524.JPG") %>
+      <%= image_tag("IMG_2569.JPG") %>
+      <%= image_tag("IMG_2583.JPG") %>
+      <%= image_tag("IMG_2598.JPG") %>
+      <%= image_tag("IMG_2692.JPG") %>
+      <%= image_tag("IMG_2695.JPG") %>
+      <%= image_tag("IMG_2696.JPG") %>
+      <%= image_tag("IMG_2704.JPG") %>
+      <%= image_tag("IMG_2727.JPG") %>
+      <%= image_tag("IMG_2736.JPG") %>
+      <%= image_tag("IMG_2750.JPG") %>
+      <%= image_tag("IMG_2775.JPG") %>
+      <%= image_tag("IMG_2785.JPG") %>
+      <%= image_tag("IMG_2790.JPG") %>
+      <%= image_tag("mAt7234-UplBJBz4AjilMm4qEQUiImn7slI0mLfU6nE.jpg") %>
+    </div>
 	</div>
-	<div class="thumbnail col-xs-12 col-sm-4 col-md-4">	
+	<div class="col-xs-12 col-sm-4 col-md-6 album" onclick="viewAlbum(this)">	
 		<%= image_tag("10608540_10203467102172042_2178081297900447308_o.jpg") %>
-		<div class="caption">
-			<h5>Knight School</h5>
-		</div>
-		<button data-toggle="modal" data-target="#galleryModal">View Gallery</button>
+		<h4 class="album-label hidden">Knight School</h4>
+    <div class="album-entries hidden">
+      <%= image_tag("10608540_10203467102172042_2178081297900447308_o.jpg") %>
+    </div>
 	</div>
 </div>
-<div>
+<!-- <div>
+>>>>>>> Adds photoswipe library for modal viewing of photo albums
 	<div class="modal" id="galleryModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-large">
     <div class="modal-content">
@@ -32,5 +60,51 @@
       </div>
     </div>
   </div>
+<<<<<<< HEAD
 </div>
+=======
+</div> -->
+<!-- </div> -->
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="pswp__bg"></div>
+    <div class="pswp__scroll-wrap">
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
 </div>

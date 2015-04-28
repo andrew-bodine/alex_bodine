@@ -15,4 +15,5 @@
 //= require turbolinks
 //= require bootstrap
 //= require index
-
+//= require photoswipe.min
+//= require photoswipe-ui-default.min
