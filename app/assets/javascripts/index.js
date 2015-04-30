@@ -100,8 +100,8 @@ function viewAlbum(albumCover) {
       items.push(
         {
           src: entry.src,
-          h: 800,
-          w: 800
+          h: entry.height,
+          w: entry.width
         }
       );
     }
