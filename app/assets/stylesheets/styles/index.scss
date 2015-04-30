@@ -29,6 +29,22 @@ body {
   z-index: 10;
 }
 
+#mobileNav{
+  z-index: 8;
+  background-color: $main-bg-color;
+  position: fixed;
+  box-shadow: 2px 2px 2px #000;
+  h4 {
+    text-align: center;
+    color: $header-text-color;
+    font-family: 'Niconne', cursive;    
+    font-size: 50px;
+  }
+  button {
+    height: 75px;
+    width: 75px;
+  }
+}
 .modal-backdrop.fade.in {
   z-index: 9;
 }
@@ -101,6 +117,7 @@ body {
     font-size: 5em;
     color: $header-text-color;
     text-shadow: 1px 1px $primary-border-color;
+    font-family: 'Niconne', cursive;
   }
 }
 
